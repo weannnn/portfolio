@@ -1,0 +1,187 @@
+/*
+Font-sizes in em/rem
+Element width in % of vw
+left, right margin en padding %
+flexbox
+*/
+
+/* ---- FONTS ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ---- COLORS ---- */
+/* 
+color:;
+color:;
+color:;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+header nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1%;
+    width: 100%;
+}
+header nav a {
+    text-decoration: none;
+    padding: 1% 5%;
+    color: black;
+    font-size: 1.5rem;
+}
+header .spline {
+    z-index: 1;
+    display: none;
+}
+
+
+main {
+    margin: 3% 3% 70%;
+    padding-top: 40%;
+}
+main .text {
+    font-size: 1.65rem;
+}
+main .text span {
+    font-size: 5rem;
+}
+#projects {
+    margin-top: 30%;
+}
+#projects h1 {
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 4px solid black;
+    margin-bottom: 6%;
+}
+#projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 10rem));
+    place-items: center;
+    grid-gap: 4%;
+    width: fit-content;
+    margin: auto;
+}
+
+
+footer {
+    background-color: #131313;
+    color: white;
+}
+
+#skills .divider {
+    position: absolute;
+    transform: translateY(-100%);
+}
+#skills {
+    width: 100%;
+    padding-top: 20%;
+}
+#skills h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+#skills .coding-skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#skills .coding-skills h5 {
+    font-weight: 300;
+}
+#skills .coding-skills .skill {
+    width: 80%;
+    margin-top: 6%;
+}
+#skills .coding-skills .skill .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#skills .coding-skills .skill .bar {
+    background-color: white;
+    width: 100%;
+    height: 1.4rem;
+}
+#skills .coding-skills .skill:nth-child(1) .bar .progress {
+    background: linear-gradient(90deg, rgba(184,88,0,1) 0%, rgba(255,182,0,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+#skills .coding-skills .skill:nth-child(2) .bar .progress {
+    background: linear-gradient(90deg, rgba(9,0,156,1) 0%, rgba(199,0,255,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+#skills .coding-skills .skill:nth-child(3) .bar .progress {
+    background: linear-gradient(90deg, rgba(184,100,0,1) 0%, rgba(255,229,0,1) 100%);
+    width: 10%;
+    height: 100%;
+}
+
+#skills .software-skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 11%;
+    padding: 5%;
+}
+#skills .software-skills .skill {
+    width: 17%;
+    margin-top: 4%;
+}
+#skills h2 {
+    margin: 17% 0% 0% 10%;
+}
+#profile {
+    margin-top: 50%;
+    padding: 10% 10% 160% 10%;
+}
+#profile h1 {
+    font-size: 10rem;
+    z-index: 2;
+    position: absolute;
+    transform: translateY(-75%);
+}
+#profile img {
+    z-index: 3;
+    position: absolute;
+    width: 80%;
+}
+#profile .decor {
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color:rgb(59, 162, 247);
+    left: 19%;
+    transform: translateY(-10%);
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+/* tablets en groter (700px en breder) */
+@media (min-width: 700px) {
+
+}
